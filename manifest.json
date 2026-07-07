@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Marktplaats Zonder Spam (Firefox)",
+  "version": "0.1.0",
+  "description": "Verbergt ongewenste Marktplaats- en 2dehands-resultaten zoals topadvertenties, Admarkt, banners en geblokkeerde verkopers.",
+  "permissions": ["storage"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "marktplaats-zonder-spam-firefox@example.com",
+      "strict_min_version": "109.0"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.marktplaats.nl/*",
+        "https://www.2dehands.be/*"
+      ],
+      "css": ["src/content.css"],
+      "js": ["src/content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": true
+  }
+}
