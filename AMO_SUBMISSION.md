@@ -18,6 +18,8 @@ This is an independent project. It is not affiliated with Marktplaats, 2dehands,
 
 The extension does not collect, transmit, sell, or share personal data. It has no remote servers, analytics, tracking pixels, external scripts, or runtime npm dependencies.
 
+The manifest declares `browser_specific_settings.gecko.data_collection_permissions.required` as `none`.
+
 All preferences, blocked sellers, and blocked keywords are stored locally in Firefox using `browser.storage.local`. The extension reads the current Marktplaats or 2dehands page only to classify and hide visible listing elements in the browser.
 
 ## Permission rationale

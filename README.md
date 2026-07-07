@@ -45,6 +45,7 @@ Brede termen zoals `www` of `.nl` zijn bewust niet standaard actief, omdat ze sn
 ## Privacy
 
 Deze extensie verzamelt, verstuurt of verkoopt geen data. Alle instellingen blijven lokaal in `browser.storage.local` in Firefox. Er zijn geen externe scripts, servers, analytics of npm-dependencies.
+De AMO-manifestmetadata declareert daarom `data_collection_permissions.required` als `none`.
 
 ## Bekende beperkingen
 
