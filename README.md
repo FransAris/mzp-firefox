@@ -65,6 +65,10 @@ node --check src/content.js
 node --check options/options.js
 ```
 
+## Over git flows / distributie
+
+Voor normaal gebruik hoef je niets te “packagen” of in te pakken: laadt de extensie gewoon via het meegeleverde `manifest.json` (zie hierboven). Het “packagen” met npm/scripts is alleen nodig voor ontwikkelaars die de extensie willen indienen op Mozilla Add-ons (AMO) en is dus voor de meeste gebruikers niet relevant. Je kan het wel gebruiken met je node-runtime naar keuze. 
+
 ## Licentie
 
 MIT. Zie [`LICENSE`](LICENSE).

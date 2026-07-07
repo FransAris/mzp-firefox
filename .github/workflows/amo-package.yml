@@ -1,0 +1,43 @@
+name: AMO package
+
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
+
+jobs:
+  package:
+    name: Lint and package unsigned add-on
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install optional packaging tools
+        run: npm install
+
+      - name: Validate source
+        run: npm run validate
+
+      - name: Lint extension
+        run: npm run lint
+
+      - name: Build unsigned ZIP
+        run: npm run package
+
+      - name: Upload unsigned package artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: unsigned-amo-package
+          path: dist/*.zip
+          if-no-files-found: error
