@@ -2,7 +2,7 @@
 
 ## Listing copy
 
-**Name:** Marktplaats Zonder Spam (Firefox)
+**Name:** Marktplaats Zonder Spam
 
 **Summary:** Hide top ads, Admarkt listings, banners and selected sellers or keywords on Marktplaats and 2dehands.
 
@@ -67,7 +67,7 @@ Manual smoke test:
 2. Confirm the ZIP contains `manifest.json` at the archive root and does not contain repository or development files:
 
    ```bash
-   python -m zipfile -l dist/marktplaats-zonder-spam-firefox-v0.1.0.zip
+   python -m zipfile -l dist/marktplaats-zonder-spam-v0.1.0.zip
    ```
 
 3. Upload the ZIP from `dist/` to Mozilla Add-ons Developer Hub.

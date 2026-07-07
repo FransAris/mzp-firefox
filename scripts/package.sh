@@ -3,7 +3,7 @@ set -eu
 
 PYTHON=${PYTHON:-python3}
 VERSION=$($PYTHON -c 'import json; print(json.load(open("manifest.json", encoding="utf-8"))["version"])')
-OUT="dist/marktplaats-zonder-spam-firefox-v$VERSION.zip"
+OUT="dist/marktplaats-zonder-spam-v$VERSION.zip"
 
 mkdir -p dist
 rm -f "$OUT"

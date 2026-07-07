@@ -1,4 +1,4 @@
-# Marktplaats Zonder Spam (Firefox)
+# Marktplaats Zonder Spam
 
 Een kleine, vanilla Firefox WebExtension die ongewenste inhoud op Marktplaats en 2dehands-resultaatpagina's verbergt. Dit is een originele MVP-implementatie op basis van zichtbaar gedrag en publieke DOM-signalen; er is geen code uit de Chrome-extensie gekopieerd.
 
