@@ -20,6 +20,19 @@ De maker van deze Firefox-extensie is niet dezelfde maker, en heeft verder geen 
 - Toont een compact bedieningspaneel op pagina's met advertenties, met zichtbare/verborgen aantallen en snelle toggles.
 - Maakt de layout optioneel compacter om witruimte te verminderen.
 
+## Doneer
+
+Als je er veel zin in hebt kan je doneren, dan maak ik meer tijd vrij om dit te onderhouden / een schikking te treffen met Marktplaats. 
+
+Hier doen we gewoon normaal een Tikkie.
+
+<p align="center">
+  <a href="https://tikkie.me/pay/upd18kg90oap9ea32sbj" target="_blank" style="text-decoration:none;">
+    <img src="https://img.shields.io/badge/Doneer%20met-Tikkie-00b14f?style=for-the-badge" alt="Doneer met Tikkie" />
+  </a>
+</p>
+
+
 ## Installeren in Firefox als tijdelijke add-on
 
 1. Open Firefox en ga naar `about:debugging`.
