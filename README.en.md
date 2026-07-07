@@ -93,16 +93,6 @@ The AMO manifest metadata therefore declares `data_collection_permissions.requir
 
 I am always open to suggestions, PRs, forks - go wild.
 
-Validation and package creation:
-
-```bash
-# Firefox, from the repo root
-npm run validate && npm run package
-
-# Chrome/Chromium
-(cd chrome-version && npm run validate && npm run package)
-```
-
 ## Donate
 
 If you really feel like it, you can donate, then I will make more time to maintain this / make a settlement with Marktplaats.
