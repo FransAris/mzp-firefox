@@ -70,6 +70,8 @@ node --check options/options.js
 
 Voor normaal gebruik hoef je niets te “packagen” of in te pakken: laadt de extensie gewoon via het meegeleverde `manifest.json` (zie hierboven). Het “packagen” met npm/scripts is alleen nodig voor ontwikkelaars die de extensie willen indienen op Mozilla Add-ons (AMO) en is dus voor de meeste gebruikers niet relevant. Je kan het wel gebruiken met je node-runtime naar keuze. 
 
+`logo.png` in de repo-root is het grote bronbestand en kan handmatig worden gebruikt als GitHub/social-preview-afbeelding; die preview stel je in via de repository-instellingen, niet via het extensie-manifest. De gegenereerde PNG's in `icons/` zijn de extensie-/store-iconen en worden meegenomen in het pakket.
+
 ## Licentie
 
 MIT. Zie [`LICENSE`](LICENSE).

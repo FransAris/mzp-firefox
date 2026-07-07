@@ -60,6 +60,8 @@ Manual smoke test:
 
 ## Upload steps
 
+The generated PNG icons in `icons/` are included in the upload package. The root `logo.png` is the large source/social-preview asset and is not packaged; GitHub social preview is configured manually in repository settings, not through the extension manifest.
+
 1. Build an unsigned upload package:
 
    ```bash
