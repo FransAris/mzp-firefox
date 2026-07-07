@@ -2,6 +2,12 @@
 
 Een kleine, vanilla Firefox WebExtension die ongewenste inhoud op Marktplaats en 2dehands-resultaatpagina's verbergt. Dit is een originele MVP-implementatie op basis van zichtbaar gedrag en publieke DOM-signalen; er is geen code uit de Chrome-extensie gekopieerd.
 
+## Inspiratie en onafhankelijkheid
+
+Geinspireerd door de Chrome-extensie ["Marktplaats zonder spam"](https://chromewebstore.google.com/detail/lekhkeegnegccgaoakphligfonjmaodh?utm_source=item-share-cb). 
+
+De maker van deze Firefox-extensie is niet dezelfde maker, en heeft verder geen enkele band met Marktplaats.
+
 ## Functies
 
 - Verbergt standaard topadvertenties, dagtoppers en 2dehands-topzoekertjes.
