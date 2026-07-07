@@ -8,7 +8,7 @@ Er was al een Firefox-plugin, gemaakt door een zekere 'Toverbal' maar deze is al
 
 Geinspireerd door de Chrome-extensie ["Marktplaats zonder spam"](https://chromewebstore.google.com/detail/lekhkeegnegccgaoakphligfonjmaodh?utm_source=item-share-cb). 
 
-De maker van deze browserextensie is niet dezelfde maker, en heeft verder geen enkele band met Marktplaats.
+De maker van deze browserextensie is niet dezelfde maker als die van de originele, en heeft verder geen enkele band met Marktplaats.
 
 <p align="center">
   <a href="https://addons.mozilla.org/nl/firefox/addon/mplaats-zonder-spam/" target="_blank" style="text-decoration:none;">
