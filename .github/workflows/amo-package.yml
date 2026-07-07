@@ -1,4 +1,4 @@
-name: AMO package
+name: Build extension packages
 
 on:
   pull_request:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   package:
-    name: Lint and package unsigned add-on
+    name: Validate and package extensions
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -23,21 +23,38 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install optional packaging tools
+      - name: Install Firefox packaging tools
         run: npm install
 
-      - name: Validate source
+      - name: Validate Firefox source
         run: npm run validate
 
       - name: Lint extension
         run: npm run lint
 
-      - name: Build unsigned ZIP
+      - name: Build unsigned Firefox packages
         run: npm run package
 
-      - name: Upload unsigned package artifact
+      - name: Validate Chrome source
+        working-directory: chrome-version
+        run: npm run validate
+
+      - name: Build Chrome package
+        working-directory: chrome-version
+        run: npm run package
+
+      - name: Upload Firefox package artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: unsigned-amo-package
-          path: dist/*.zip
+          name: firefox-packages
+          path: |
+            dist/*.xpi
+            dist/*.zip
+          if-no-files-found: error
+
+      - name: Upload Chrome package artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: chrome-packages
+          path: chrome-version/dist/*.zip
           if-no-files-found: error

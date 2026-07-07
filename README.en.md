@@ -12,6 +12,18 @@ Inspired by the Chrome extension ["Marktplaats zonder spam"](https://chromewebst
 The maker of this browser extension is not the same maker, and has no connection to Marktplaats.
 
 <p align="center">
+  <a href="https://addons.mozilla.org/en-US/firefox/addon/mplaats-zonder-spam/" target="_blank" style="text-decoration:none;">
+    <img src="https://img.shields.io/badge/Firefox%20Add--ons-Install%20for%20Firefox-FF7139?style=for-the-badge&amp;logo=firefoxbrowser&amp;logoColor=white" alt="Install for Firefox on Firefox Add-ons" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="#installtest-in-chromechromium" style="text-decoration:none;">
+    <img src="https://img.shields.io/badge/Chrome%20Web%20Store-Coming%20soon-4285F4?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Chrome Web Store - Coming soon" />
+  </a>
+</p>
+
+<p align="center">
   <a id="donate-button" href="https://tikkie.me/pay/upd18kg90oap9ea32sbj" target="_blank" style="text-decoration:none;">
     <img src="https://img.shields.io/badge/Donate%20with-Tikkie-00b14f?style=for-the-badge" alt="Donate with Tikkie" />
   </a>
@@ -29,7 +41,11 @@ The maker of this browser extension is not the same maker, and has no connection
 - Shows a compact control panel on pages with listings, with visible/hidden counts and quick toggles.
 - Optionally makes the layout more compact to reduce whitespace.
 
-## Install/test in Firefox
+## Install in Firefox
+
+For normal use, install the stable version from Firefox Add-ons: [Install Marktplaats Without Spam for Firefox](https://addons.mozilla.org/en-US/firefox/addon/mplaats-zonder-spam/). This is the recommended installation; Firefox will keep the add-on updated automatically.
+
+### Temporary local install
 
 1. Open Firefox and go to `about:debugging`.
 2. Choose **This Firefox**.
@@ -37,30 +53,17 @@ The maker of this browser extension is not the same maker, and has no connection
 4. Select `manifest.json` from this project folder.
 5. Open or reload `https://www.marktplaats.nl/` or `https://www.2dehands.be/`.
 
-Temporary add-ons disappear when Firefox is fully closed. Load the extension again through `about:debugging` after that.
+Temporary add-ons disappear when Firefox is fully closed. Load the extension again through `about:debugging` after that. Use this only for development or temporary testing; this is not recommended for normal users.
 
 ## Install/test in Chrome/Chromium
 
 The Chrome version is in `chrome-version/`.
+To use it without building yourself: [download the Chrome ZIP](chrome-version/dist/markplaats-zonder-spam-v2-chrome.zip), unzip it to a folder and load that unpacked folder. Developers can also build it themselves from `chrome-version/`.
 
 1. Open Chrome and go to `chrome://extensions`.
 2. Enable **Developer mode**.
 3. Click **Load unpacked**.
-4. Select the `chrome-version/` folder.
-
-Create a package from `chrome-version/`:
-
-```bash
-npm run validate && npm run package
-```
-
-Then upload this ZIP to the Chrome Web Store:
-
-```text
-chrome-version/dist/markplaats-zonder-spam-v2-chrome-v0.1.0.zip
-```
-
-The Chrome version uses `chrome-icon.png` as the source through the generated assets in `chrome-version/icons/`; the source file itself does not belong in the Chrome ZIP.
+4. Select the unzipped folder, or the `chrome-version/` folder from the repo.
 
 ## Settings
 

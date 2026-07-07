@@ -1,17 +1,35 @@
+# Dependencies
 node_modules/
-dist/
-web-ext-artifacts/
 
+# Build outputs and package artifacts
+dist/*
+web-ext-artifacts/
 *.xpi
 *.zip
 
+# Keep the published Firefox XPI tracked despite dist/ and *.xpi ignores
+!dist/
+!dist/marktplaats-zonder-spam.xpi
+
+# Keep the published Chrome ZIP tracked despite dist/ and *.zip ignores
+!chrome-version/dist/
+chrome-version/dist/*
+!chrome-version/dist/markplaats-zonder-spam-v2-chrome.zip
+
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# OS files
 .DS_Store
 
-AMO_SUBMISSION.md
+# Generated local source asset; final generated icons live in chrome-version/icons/
+chrome-icon-transparent.png
+chrome-version/CHROME_SUBMISSION.en.md
+chrome-version/CHROME_SUBMISSION.md
+banner.jpg
 chrome-icon.png
 chromepromo.jpg
-
-chrome-version/CHROME_SUBMISSION.md
+PRIVACY.md
+promobanner.jpg

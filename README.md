@@ -13,6 +13,18 @@ Geinspireerd door de Chrome-extensie ["Marktplaats zonder spam"](https://chromew
 De maker van deze browserextensie is niet dezelfde maker, en heeft verder geen enkele band met Marktplaats.
 
 <p align="center">
+  <a href="https://addons.mozilla.org/nl/firefox/addon/mplaats-zonder-spam/" target="_blank" style="text-decoration:none;">
+    <img src="https://img.shields.io/badge/Firefox%20Add--ons-Installeer%20voor%20Firefox-FF7139?style=for-the-badge&amp;logo=firefoxbrowser&amp;logoColor=white" alt="Installeer voor Firefox op Firefox Add-ons" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="#installerentesten-in-chromechromium" style="text-decoration:none;">
+    <img src="https://img.shields.io/badge/Chrome%20Web%20Store-Binnenkort-4285F4?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Chrome Web Store - Binnenkort" />
+  </a>
+</p>
+
+<p align="center">
   <a id="donate-button" href="https://tikkie.me/pay/upd18kg90oap9ea32sbj" target="_blank" style="text-decoration:none;">
     <img src="https://img.shields.io/badge/Doneer%20met-Tikkie-00b14f?style=for-the-badge" alt="Doneer met Tikkie" />
   </a>
@@ -30,7 +42,15 @@ De maker van deze browserextensie is niet dezelfde maker, en heeft verder geen e
 - Toont een compact bedieningspaneel op pagina's met advertenties, met zichtbare/verborgen aantallen en snelle toggles.
 - Maakt de layout optioneel compacter om witruimte te verminderen.
 
-## Installeren/testen in Firefox
+## Installeren in Firefox
+
+Gebruik als normale gebruiker de stabiele versie op Firefox Add-ons: [Installeer Marktplaats Zonder Spam voor Firefox](https://addons.mozilla.org/nl/firefox/addon/mplaats-zonder-spam/). Dit is de aanbevolen installatie; Firefox houdt de add-on dan automatisch bij.
+
+Repo-pakket: [download de Firefox XPI](dist/marktplaats-zonder-spam.xpi). Dit bestand is een ongetekend ontwikkel-/reviewpakket uit deze repo. Gebruik Firefox Add-ons voor gewone stabiele Firefox; gewone Firefox installeert een ongetekende XPI niet blijvend, tenzij je een ondertekend AMO-artefact hebt of een compatibele Firefox-variant gebruikt waarin handtekeningcontrole is uitgeschakeld.
+
+### Handmatig installeren
+
+NB: Totdat Mozilla de plugin verifieert, is deze installatie _tijdelijk_. 
 
 1. Open Firefox en ga naar `about:debugging`.
 2. Kies **This Firefox** / **Deze Firefox**.
@@ -38,30 +58,17 @@ De maker van deze browserextensie is niet dezelfde maker, en heeft verder geen e
 4. Selecteer `manifest.json` uit deze projectmap.
 5. Open of herlaad `https://www.marktplaats.nl/` of `https://www.2dehands.be/`.
 
-Tijdelijke add-ons verdwijnen wanneer Firefox volledig wordt afgesloten. Laad de extensie daarna opnieuw via `about:debugging`.
+Tijdelijke add-ons verdwijnen wanneer Firefox volledig wordt afgesloten. Laad de extensie daarna opnieuw via `about:debugging`. Gebruik dit alleen voor ontwikkeling of tijdelijk testen; dit is niet aanbevolen voor normale gebruikers.
 
 ## Installeren/testen in Chrome/Chromium
 
 De Chrome-versie staat in `chrome-version/`.
+Voor gebruik zonder zelf te bouwen: [download de Chrome ZIP](chrome-version/dist/markplaats-zonder-spam-v2-chrome.zip), pak deze uit naar een map en laad die uitgepakte map. Ontwikkelaars kunnen ook zelf bouwen vanuit `chrome-version/`.
 
 1. Open Chrome en ga naar `chrome://extensions`.
 2. Zet **Developer mode** / **Ontwikkelaarsmodus** aan.
 3. Klik op **Load unpacked** / **Uitgepakte extensie laden**.
-4. Selecteer de map `chrome-version/`.
-
-Package maken vanuit `chrome-version/`:
-
-```bash
-npm run validate && npm run package
-```
-
-Upload daarna deze ZIP naar de Chrome Web Store:
-
-```text
-chrome-version/dist/markplaats-zonder-spam-v2-chrome-v0.1.0.zip
-```
-
-De Chrome-versie gebruikt `chrome-icon.png` als bron via de gegenereerde assets in `chrome-version/icons/`; het bronbestand zelf hoort niet in de Chrome ZIP.
+4. Selecteer de uitgepakte ZIP-map, of vanuit de repo de map `chrome-version/
 
 ## Instellingen
 
