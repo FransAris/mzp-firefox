@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Markplaats Zonder Spam V2 - opties</title>
+    <link rel="stylesheet" href="options.css">
+    <script defer src="options.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Markplaats Zonder Spam V2</h1>
+      <p class="intro">Instellingen voor het verbergen van ongewenste Marktplaats- en 2dehands-resultaten.</p>
+
+      <form id="optionsForm">
+        <section>
+          <h2>Filters</h2>
+          <label><input type="checkbox" id="hidePriorityAds"> Topadvertenties, dagtoppers en topzoekertjes verbergen</label>
+          <label><input type="checkbox" id="hideAdmarkt"> Admarkt/commerciële advertenties verbergen</label>
+          <label><input type="checkbox" id="hideExternalWebsite"> Verkopers met externe website verbergen</label>
+          <label><input type="checkbox" id="hideBusinessSellers"> Zakelijke/high-volume signalen verbergen</label>
+          <label><input type="checkbox" id="hideVerifiedSellers"> Geverifieerde verkopers verbergen</label>
+          <label><input type="checkbox" id="hideReserved"> Gereserveerde advertenties verbergen</label>
+          <label><input type="checkbox" id="hideBanners"> Banners en advertentieblokken verbergen</label>
+          <label><input type="checkbox" id="compactLayout"> Witruimte compacter maken</label>
+          <label><input type="checkbox" id="showPanel"> Bedieningspaneel op zoekpagina's tonen</label>
+        </section>
+
+        <section>
+          <h2>Geblokkeerde verkopers</h2>
+          <p>Zet één verkoper per regel. Namen worden hoofdletterongevoelig vergeleken.</p>
+          <textarea id="sellerBlacklist" rows="8" spellcheck="false"></textarea>
+        </section>
+
+        <section>
+          <h2>Keyword-blacklist</h2>
+          <p>Advertenties met deze woorden in de tekst worden verborgen. Voeg voorzichtig brede termen zoals <code>www</code> of <code>.nl</code> toe.</p>
+          <textarea id="keywordBlacklist" rows="6" spellcheck="false"></textarea>
+        </section>
+
+        <div class="actions">
+          <button type="submit">Opslaan</button>
+          <button type="button" id="resetButton">Standaard herstellen</button>
+          <button type="button" id="exportButton">Exporteren</button>
+        </div>
+      </form>
+
+      <section>
+        <h2>Importeren</h2>
+        <p>Plak eerder geëxporteerde JSON en klik op importeren.</p>
+        <textarea id="importJson" rows="5" spellcheck="false"></textarea>
+        <div class="actions">
+          <button type="button" id="importButton">Importeren</button>
+        </div>
+      </section>
+
+      <p id="status" role="status" aria-live="polite"></p>
+    </main>
+  </body>
+</html>
