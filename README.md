@@ -40,11 +40,7 @@ De maker van deze browserextensie is niet dezelfde maker als die van de originel
 - Toont een compact bedieningspaneel op pagina's met advertenties, met zichtbare/verborgen aantallen en snelle toggles.
 - Maakt de layout optioneel compacter om witruimte te verminderen.
 
-## Installeren in Firefox
-
-Gebruik als normale gebruiker de stabiele versie op Firefox Add-ons: [Installeer Marktplaats Zonder Spam voor Firefox](https://addons.mozilla.org/nl/firefox/addon/mplaats-zonder-spam/). Dit is de aanbevolen installatie; Firefox houdt de add-on dan automatisch bij.
-
-Repo-pakket: [download de Firefox XPI](dist/marktplaats-zonder-spam.xpi). Dit bestand is een ongetekend ontwikkel-/reviewpakket uit deze repo. Gebruik Firefox Add-ons voor gewone stabiele Firefox; gewone Firefox installeert een ongetekende XPI niet blijvend, tenzij je een ondertekend AMO-artefact hebt of een compatibele Firefox-variant gebruikt waarin handtekeningcontrole is uitgeschakeld.
+Momenteel verifieert Mozilla de plug-in; tot die tijd kan je het handmatig installeren en gebruiken.
 
 ## Handmatig installeren
 

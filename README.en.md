@@ -39,6 +39,8 @@ The maker of this browser extension is not the same maker, and has no connection
 - Shows a compact control panel on pages with listings, with visible/hidden counts and quick toggles.
 - Optionally makes the layout more compact to reduce whitespace.
 
+The plugin is currently being verfified by Mozilla and Google. Up until then, you can use a manual installation.
+
 ## Install manually
 
 ### Chrome/Chromium
