@@ -1,11 +1,9 @@
 <p align="center"><a href="README.md">Nederlands</a> · <strong>English</strong></p>
 
-# Marktplaats Without Spam
+# Marktplaats Without Spam V2
 
 A small, vanilla browser extension that hides unwanted content on Marktplaats and 2dehands result pages. This repo contains builds for Firefox and Chrome/Chromium. This is an original MVP implementation based on visible behavior and public DOM signals; no code from the original Chrome extension was copied.
 There already was a Firefox plugin, made by someone called 'Toverbal', but it has not been updated for 4 years. Hence this one.
-
-## Inspiration and independence
 
 Inspired by the Chrome extension ["Marktplaats zonder spam"](https://chromewebstore.google.com/detail/lekhkeegnegccgaoakphligfonjmaodh?utm_source=item-share-cb).
 
@@ -41,21 +39,9 @@ The maker of this browser extension is not the same maker, and has no connection
 - Shows a compact control panel on pages with listings, with visible/hidden counts and quick toggles.
 - Optionally makes the layout more compact to reduce whitespace.
 
-## Install in Firefox
+## Install manually
 
-For normal use, install the stable version from Firefox Add-ons: [Install Marktplaats Without Spam for Firefox](https://addons.mozilla.org/en-US/firefox/addon/mplaats-zonder-spam/). This is the recommended installation; Firefox will keep the add-on updated automatically.
-
-### Temporary local install
-
-1. Open Firefox and go to `about:debugging`.
-2. Choose **This Firefox**.
-3. Click **Load Temporary Add-on...**.
-4. Select `manifest.json` from this project folder.
-5. Open or reload `https://www.marktplaats.nl/` or `https://www.2dehands.be/`.
-
-Temporary add-ons disappear when Firefox is fully closed. Load the extension again through `about:debugging` after that. Use this only for development or temporary testing; this is not recommended for normal users.
-
-## Install/test in Chrome/Chromium
+### Chrome/Chromium
 
 The Chrome version is in `chrome-version/`.
 To use it without building yourself: [download the Chrome ZIP](chrome-version/dist/markplaats-zonder-spam-v2-chrome.zip), unzip it to a folder and load that unpacked folder. Developers can also build it themselves from `chrome-version/`.
@@ -64,6 +50,16 @@ To use it without building yourself: [download the Chrome ZIP](chrome-version/di
 2. Enable **Developer mode**.
 3. Click **Load unpacked**.
 4. Select the unzipped folder, or the `chrome-version/` folder from the repo.
+
+### Firefox
+
+1. Open Firefox and go to `about:debugging`.
+2. Choose **This Firefox**.
+3. Click **Load Temporary Add-on...**.
+4. Select `manifest.json` from this project folder.
+5. Open or reload `https://www.marktplaats.nl/` or `https://www.2dehands.be/`.
+
+Temporary add-ons disappear when Firefox is fully closed. Load the extension again through `about:debugging` after that. Use this only for development or temporary testing; this is not recommended for normal users.
 
 ## Settings
 

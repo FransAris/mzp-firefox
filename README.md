@@ -1,12 +1,10 @@
 <p align="center"><strong>Nederlands</strong> · <a href="README.en.md">English</a></p>
 
-# Marktplaats Zonder Spam
+# Marktplaats Zonder Spam V2
 
 Een kleine, vanilla browserextensie die ongewenste inhoud op Marktplaats en 2dehands-resultaatpagina's verbergt. Deze repo bevat builds voor Firefox en Chrome/Chromium. Dit is een originele MVP-implementatie op basis van zichtbaar gedrag en publieke DOM-signalen; er is geen code uit de oorspronkelijke Chrome-extensie gekopieerd.
 
 Er was al een Firefox-plugin, gemaakt door een zekere 'Toverbal' maar deze is al 4 jaar niet meer geupdated. Vandaar deze.
-
-## Inspiratie en onafhankelijkheid
 
 Geinspireerd door de Chrome-extensie ["Marktplaats zonder spam"](https://chromewebstore.google.com/detail/lekhkeegnegccgaoakphligfonjmaodh?utm_source=item-share-cb). 
 
@@ -48,7 +46,19 @@ Gebruik als normale gebruiker de stabiele versie op Firefox Add-ons: [Installeer
 
 Repo-pakket: [download de Firefox XPI](dist/marktplaats-zonder-spam.xpi). Dit bestand is een ongetekend ontwikkel-/reviewpakket uit deze repo. Gebruik Firefox Add-ons voor gewone stabiele Firefox; gewone Firefox installeert een ongetekende XPI niet blijvend, tenzij je een ondertekend AMO-artefact hebt of een compatibele Firefox-variant gebruikt waarin handtekeningcontrole is uitgeschakeld.
 
-### Handmatig installeren
+## Handmatig installeren
+
+### Chrome(ium)
+
+De Chrome-versie staat in `chrome-version/`.
+Voor gebruik zonder zelf te bouwen: [download de Chrome ZIP](chrome-version/dist/markplaats-zonder-spam-v2-chrome.zip), pak deze uit naar een map en laad die uitgepakte map. Ontwikkelaars kunnen ook zelf bouwen vanuit `chrome-version/`.
+
+1. Open Chrome en ga naar `chrome://extensions`.
+2. Zet **Developer mode** / **Ontwikkelaarsmodus** aan.
+3. Klik op **Load unpacked** / **Uitgepakte extensie laden**.
+4. Selecteer de uitgepakte ZIP-map, of vanuit de repo de map `chrome-version/
+
+### Firefox
 
 NB: Totdat Mozilla de plugin verifieert, is deze installatie _tijdelijk_. 
 
@@ -59,16 +69,6 @@ NB: Totdat Mozilla de plugin verifieert, is deze installatie _tijdelijk_.
 5. Open of herlaad `https://www.marktplaats.nl/` of `https://www.2dehands.be/`.
 
 Tijdelijke add-ons verdwijnen wanneer Firefox volledig wordt afgesloten. Laad de extensie daarna opnieuw via `about:debugging`. Gebruik dit alleen voor ontwikkeling of tijdelijk testen; dit is niet aanbevolen voor normale gebruikers.
-
-## Installeren/testen in Chrome/Chromium
-
-De Chrome-versie staat in `chrome-version/`.
-Voor gebruik zonder zelf te bouwen: [download de Chrome ZIP](chrome-version/dist/markplaats-zonder-spam-v2-chrome.zip), pak deze uit naar een map en laad die uitgepakte map. Ontwikkelaars kunnen ook zelf bouwen vanuit `chrome-version/`.
-
-1. Open Chrome en ga naar `chrome://extensions`.
-2. Zet **Developer mode** / **Ontwikkelaarsmodus** aan.
-3. Klik op **Load unpacked** / **Uitgepakte extensie laden**.
-4. Selecteer de uitgepakte ZIP-map, of vanuit de repo de map `chrome-version/
 
 ## Instellingen
 
